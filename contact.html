@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .banner-overlay {
+            background: rgba(0,0,0,0.5);
+        }
+        .contact-form-bg {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-30 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Icon -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="Logo" class="w-10 h-10 rounded-full mr-3">
+                <span class="text-white font-bold text-xl">TravelBloom</span>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="./index.html" class="text-white hover:text-gray-300 transition">Home</a>
+                <a href="./about.html" class="text-white hover:text-gray-300 transition">About</a>
+                <a href="./contact.html" class="text-white hover:text-gray-300 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-2">
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative h-screen w-full flex items-center">
+        <img 
+            src="./images/banner.jpg" 
+            alt="Banner Image" 
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        
+        <div class="absolute inset-0 banner-overlay flex items-center">
+            <div class="container mx-auto px-4 flex items-center justify-between">
+                <div class="w-1/2 pr-12">
+                    <h1 class="text-6xl font-bold text-white leading-tight mb-4">
+                        Contact <br/>Us
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-6">
+                        We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                    </p>
+                </div>
+
+                <div class="w-1/2 pl-12">
+                    <form class="contact-form-bg p-8 rounded-xl shadow-2xl">
+                        <h2 class="text-2xl text-white font-semibold mb-6 text-center">Get In Touch</h2>
+                        <div class="mb-4">
+                            <input 
+                                type="text" 
+                                placeholder="Your Name" 
+                                class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                        </div>
+                        <div class="mb-4">
+                            <input 
+                                type="email" 
+                                placeholder="Your Email" 
+                                class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                        </div>
+                        <div class="mb-4">
+                            <textarea 
+                                placeholder="Your Message" 
+                                rows="4" 
+                                class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            ></textarea>
+                        </div>
+                        <button 
+                            type="submit" 
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed bottom-5 right-5 flex space-x-4">
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-youtube text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-facebook text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-pink-600 hover:bg-pink-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-blue-400 hover:bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-twitter text-2xl"></i>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Team</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .team-bg {
+            background-image: url('./images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .team-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-blend-mode: multiply;
+        }
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-30 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Icon -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="Logo" class="w-10 h-10 rounded-full mr-3">
+                <span class="text-white font-bold text-xl">TravelBloom</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex items-center space-x-6">
+                <a href="./index.html" class="text-white hover:text-gray-300 transition">Home</a>
+                <a href="./about.html" class="text-white hover:text-gray-300 transition">About</a>
+                <a href="./contact.html" class="text-white hover:text-gray-300 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-2">
+            </div>
+        </div>
+    </nav>
+
+    <div class="team-bg min-h-screen pt-24 pb-16">
+        <div class="container mx-auto px-4 content-wrapper">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-white mb-4">About Our Company</h1>
+                <p class="text-lg text-white max-w-3xl mx-auto">
+                    We are a passionate team dedicated to delivering fun and exceptional services to our clients.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative">
+                        <img 
+                            src="./images/team.jpg" 
+                            alt="Team Member 1" 
+                            class="w-full h-60 object-cover"
+                        >
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-3">
+                            <h3 class="text-xl font-bold">John Doe</h3>
+                            <p class="text-xs">Founder & CEO</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative">
+                        <img 
+                            src="./images/team.jpg" 
+                            alt="Team Member 2" 
+                            class="w-full h-60 object-cover"
+                        >
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-3">
+                            <h3 class="text-xl font-bold">Jane Smith</h3>
+                            <p class="text-xs">Travel Officer</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative">
+                        <img 
+                            src="./images/team.jpg" 
+                            alt="Team Member 3" 
+                            class="w-full h-60 object-cover"
+                        >
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-3">
+                            <h3 class="text-xl font-bold">Mike Johnson</h3>
+                            <p class="text-xs">Director</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fixed bottom-5 right-5 flex space-x-4">
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-youtube text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-facebook text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-pink-600 hover:bg-pink-700 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="#" class="text-white bg-blue-400 hover:bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center transition">
+            <i class="fab fa-twitter text-2xl"></i>
+        </a>
+    </div>
+</body>
+</html>
