@@ -13,8 +13,7 @@ function searchCondition() {
             if (country) {
                 array = country.cities
                 array.forEach(city => {
-                    resultDiv.innerHTML += `<div class="custom-card">`;
-                    resultDiv.innerHTML += `<img src="${city.imageUrl}" alt="image" class="w-full h-40 object-cover">`;
+                    resultDiv.innerHTML += `<div class="custom-card"><img src="${city.imageUrl}" alt="image" class="w-full h-40 object-cover">`;
                     resultDiv.innerHTML += `<div class="p-4">`;
                     resultDiv.innerHTML += `<h3 class="text-xl font-bold mb-2">${city.name}</h3></p>`;
                     resultDiv.innerHTML += `<p class="text-gray-600 mb-3 text-sm">${city.description}</p>`;
