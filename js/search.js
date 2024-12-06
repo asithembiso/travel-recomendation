@@ -18,8 +18,8 @@ function searchCondition() {
                     resultDiv.innerHTML += `<div class="p-4">`;
                     resultDiv.innerHTML += `<h3 class="text-xl font-bold mb-2">${city.name}</h3></p>`;
                     resultDiv.innerHTML += `<p class="text-gray-600 mb-3 text-sm">${city.description}</p>`;
-                    resultDiv.innerHTML += `<a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm transition">Visit Service</a>">`;
-                    resultDiv.innerHTML += "</div></div>"
+                    resultDiv.innerHTML += `<a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm transition">Visit Service</a>`;
+                    resultDiv.innerHTML += `</div></div>`
                 });
 
 
